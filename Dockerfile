@@ -13,5 +13,5 @@ RUN npm install
 # Define the entry point for the container
 CMD ["npm", "run", "start"]
 
-## Exposed dockerfile this tcp port
-#EXPOSE 4444
+# Exposed dockerfile this tcp port
+EXPOSE 5555
