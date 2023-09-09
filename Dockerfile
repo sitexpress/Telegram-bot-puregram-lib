@@ -14,4 +14,4 @@ RUN npm install  --legacy-peer-deps
 CMD ["npm", "run", "start"]
 
 # Exposed dockerfile this tcp port
-EXPOSE 5555
+EXPOSE 5550
