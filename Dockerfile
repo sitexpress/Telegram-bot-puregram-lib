@@ -8,10 +8,10 @@ WORKDIR /
 COPY . .
 
 # Install the application dependencies
-RUN node index.js
+RUN npm install
 
 # Define the entry point for the container
-CMD ["npm", "start"]
+CMD ["node", "index.js"]
 
 # Exposed dockerfile this tcp port
 EXPOSE 5222
