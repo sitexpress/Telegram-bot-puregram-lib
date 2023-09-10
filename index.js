@@ -42,7 +42,7 @@ server.listen(port, hostname, () => {
             }
 
             if (context.text === '/cancel') {
-                await context.send('Действие отменено. Вы можете начать заново, набрав /start')
+                await context.send('Действие отменено. Вы можете начать заново, набрав /start',{reply_markup: new RemoveKeyboard()})
             }
 
             if(context.text === 'Создать профиль') {
