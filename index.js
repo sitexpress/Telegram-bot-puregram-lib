@@ -11,7 +11,7 @@ const {
 require('dotenv').config();
 
 // const hostname = '127.0.0.1';
-const hostname = 'http://(t.me/PeredelanoCloneBot)(-1)web.telegram.org:80/api(w)(s)(_test)';
+const hostname = 'http://(PeredelanoCloneBot)(-1)web.telegram.org:80/api(w)(s)(_test)';
 const port = 80;
 
 const server = http.createServer((req, res) => {
