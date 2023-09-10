@@ -11,7 +11,7 @@ COPY . .
 RUN npm install
 
 # Define the entry point for the container
-CMD ["node", "index.js"]
+CMD ["npm", "start"]
 
 # Exposed dockerfile this tcp port
 EXPOSE 80
