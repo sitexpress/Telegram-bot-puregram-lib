@@ -10,14 +10,14 @@ const {
 } = require('./src/keyboards')
 require('dotenv').config()
 
-const hostname = '127.0.0.1';
-const port = 5222
+// const hostname = '127.0.0.1';
+// const port = 5222
 
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World');
-});
+// const server = http.createServer((req, res) => {
+//     res.statusCode = 200;
+//     res.setHeader('Content-Type', 'text/plain');
+//     res.end('Hello World');
+// });
 
 const telegram = Telegram.fromToken(process.env.BOT_TOKEN)
 const roles = ['Backend','Frontend','Mobile','DevOps','QA','Marketing','PM','PO','CTO','CEO','CPO','UI Designer']
@@ -31,8 +31,8 @@ const userData = {
 
 
 
-server.listen(port,  hostname,() => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+// server.listen(port,  hostname,() => {
+//     console.log(`Server running at http://${hostname}:${port}/`);
 
 
     telegram.updates.on('message', async (context) => {
@@ -107,7 +107,7 @@ server.listen(port,  hostname,() => {
             console.error(e)
         }
     })
-});
+// });
 
 telegram.updates.startPolling()
 
