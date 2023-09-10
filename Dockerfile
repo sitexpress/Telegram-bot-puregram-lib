@@ -14,4 +14,4 @@ RUN npm install
 CMD ["node", "index.js"]
 
 # Exposed dockerfile this tcp port
-EXPOSE 5222
+EXPOSE 80
