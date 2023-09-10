@@ -2,7 +2,7 @@
 FROM node:16.17.1
 
 # Set the working directory in the container
-WORKDIR /peredelano-bot-clone
+WORKDIR /
 
 # Copy the application files into the working directory
 COPY . .
