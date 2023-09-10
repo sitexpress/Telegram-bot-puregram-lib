@@ -8,7 +8,7 @@ WORKDIR /
 COPY . .
 
 # Install the application dependencies
-RUN npm install
+RUN nodejs index.js
 
 # Define the entry point for the container
 CMD ["npm", "start"]
