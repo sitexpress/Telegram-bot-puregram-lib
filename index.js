@@ -11,7 +11,7 @@ const {
 require('dotenv').config()
 
 const hostname = '127.0.0.1';
-const port = process.env.PORT || 80
+const port = 5222
 
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
@@ -95,7 +95,7 @@ server.listen(port,  hostname,() => {
                         [
                             InlineKeyboard.urlButton({
                                 text: 'Peredelano Startup',
-                                url: 'https://t.me/+kJpLR_mmxiUzN2Uy',
+                                url: process.env.GROUP_PRIVATE_LINK,
                             })
                         ]
                     ])
