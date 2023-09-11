@@ -95,7 +95,7 @@ telegram.updates.on('message', async (context) => {
         }
 
     } catch(e) {
-        await context.send('Что-то пошло не так, попробуйте начать с заново, набрав /start')
+        await context.send('Что-то пошло не так, попробуйте начать заново, набрав /start')
         console.error(e)
     }
 })
