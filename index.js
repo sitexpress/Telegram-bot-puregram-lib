@@ -10,7 +10,7 @@ const {
 } = require('./src/keyboards')
 require('dotenv').config()
 
-const hostname = 'localhost';
+const hostname = 'https://t.me/PeredelanoCloneBot';
 const port = 5222
 
 const server = http.createServer((req, res) => {
