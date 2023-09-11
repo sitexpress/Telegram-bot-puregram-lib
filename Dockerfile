@@ -14,4 +14,4 @@ RUN npm install
 CMD ["npm", "start"]
 
 # Exposed dockerfile this tcp port
-EXPOSE 80
+EXPOSE 5222

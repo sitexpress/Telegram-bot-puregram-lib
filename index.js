@@ -1,5 +1,5 @@
-const { Telegram, RemoveKeyboard, InlineKeyboard } = require('puregram');
-const { messages } = require('./src/messages');
+const { Telegram, RemoveKeyboard, InlineKeyboard } = require('puregram')
+const { messages } = require('./src/messages')
 const http = require('http');
 const {
     createProfileKeyboard,
@@ -7,12 +7,11 @@ const {
     createExperience,
     skip,
     createConfirmation
-} = require('./src/keyboards');
-require('dotenv').config();
+} = require('./src/keyboards')
+require('dotenv').config()
 
-// const hostname = '127.0.0.1';
-const hostname = 'http://(PeredelanoCloneBot)(-1)web.telegram.org:80/api(w)(s)(_test)';
-const port = 80;
+const hostname = '127.0.0.1';
+const port = 5222
 
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
@@ -105,10 +104,10 @@ server.listen(port,  hostname,() => {
 
         } catch(e) {
             await context.send('Что-то пошло не так, попробуйте начать с заново, набрав /start')
-            console.error(e);
+            console.error(e)
         }
     })
 });
 
-telegram.updates.startPolling();
+telegram.updates.startPolling()
 
